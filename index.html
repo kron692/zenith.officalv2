@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENITH | Experience the Best Tool</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Luckiest+Guy&display=swap');
+
+        :root {
+            --bg: #000000;
+            --card-bg: #0a0a0a;
+            --border: #1a1a1a;
+            --gray: #888888;
+            --accent: #ffffff;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg); color: white; font-family: 'Inter', sans-serif; margin: 0; }
+
+        /* Navigation Bar */
+        nav { display: flex; justify-content: center; padding: 35px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .nav-pill {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(15px);
+            padding: 12px 45px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--border);
+        }
+        .nav-brand { display: flex; align-items: center; gap: 15px; text-decoration: none; color: white; margin-right: 40px; }
+        .z-logo { font-family: 'Luckiest Guy'; font-size: 1.8rem; background: white; color: black; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 10px; }
+        .nav-links { display: flex; gap: 35px; }
+        .nav-links a { color: var(--gray); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: white; }
+        .discord-link { display: flex; align-items: center; gap: 10px; color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; margin-left: 45px; }
+
+        /* Sections */
+        section { padding: 180px 20px 100px 20px; max-width: 1100px; margin: 0 auto; }
+
+        /* Hero */
+        .hero { text-align: center; }
+        .status-badge { border: 1px solid #00ff64; color: #00ff64; padding: 6px 18px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; margin-bottom: 30px; display: inline-block; }
+        h1 { font-size: 6rem; margin: 0; font-weight: 700; background: linear-gradient(to bottom, #fff 40%, #555 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: var(--gray); font-size: 1.2rem; margin: 35px auto; max-width: 750px; line-height: 1.7; }
+
+        /* Performance Badges */
+        .stat-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 15px; padding: 20px 30px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; }
+        .stat-info h4 { margin: 0; font-size: 1.1rem; }
+        .stat-info p { margin: 5px 0 0 0; color: var(--gray); font-size: 0.85rem; }
+        .stat-val { font-weight: 800; font-size: 1.1rem; }
+
+        /* About Section */
+        .about-box { background: var(--card-bg); border: 1px solid var(--border); padding: 50px; border-radius: 30px; margin-top: 50px; }
+        .about-box h2 { font-size: 2.2rem; margin-bottom: 25px; }
+        .about-box p { line-height: 1.8; color: #ccc; margin-bottom: 20px; }
+
+        /* Help Section */
+        .help-container { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start; }
+        .help-img { width: 100%; border-radius: 15px; border: 1px solid var(--border); }
+        .issue-card { background: var(--card-bg); border: 1px solid var(--border); padding: 25px; border-radius: 15px; margin-bottom: 20px; }
+
+        /* Executors */
+        .exec-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 30px; }
+        .exec-pill { background: #0d0d0d; border: 1px solid var(--border); padding: 12px 30px; border-radius: 12px; font-weight: 600; color: #ccc; }
+
+        footer { text-align: center; padding: 100px 0; color: #222; font-weight: 800; letter-spacing: 2px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-pill">
+            <a href="#home" class="nav-brand"><div class="z-logo">Z</div> <div class="brand-name">ZENITH</div></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#executors">Executors</a>
+                <a href="#help">Help</a>
+                <a href="#get">Loadstring</a>
+            </div>
+            <a href="https://discord.gg/E3ghGN9g" class="discord-link">Join Discord</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="status-badge">🟢 UNDETECTED</div>
+        <h1>Z3NITH V2</h1>
+        <p class="subtitle">Experience the peak of Arsenal scripts. Optimized for speed, reliability, and total dominance.</p>
+        
+        <div style="max-width: 500px; margin: 50px auto;">
+            <div class="stat-card">
+                <div class="stat-info"><h4>Execution Speed</h4><p>Instant script execution</p></div>
+                <div class="stat-val">Lightning Fast</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info"><h4>Performance</h4><p>Good performance</p></div>
+                <div class="stat-val">99.9%</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-box">
+            <h2>About Zenith</h2>
+            <p>Zenith is a premium external Roblox script made for gameplay improvements. It is built with performance in mind, offering seamless <b>Script Execution</b> and reliable memory management.</p>
+            <p>What sets Zenith apart is its commitment to being a <b>Fast and Stable Engine</b>, making it accessible to everyone. The interface is designed to be simple, whether you're new or an experienced user.</p>
+        </div>
+    </section>
+
+    <section id="executors" style="text-align: center;">
+        <h2>Supported Executors</h2>
+        <p style="color: var(--gray);">Zenith is verified and optimized for all major platforms.</p>
+        <div class="exec-grid">
+            <div class="exec-pill">Xeno</div>
+            <div class="exec-pill">Wave</div>
+            <div class="exec-pill">Solara</div>
+            <div class="exec-pill">Swift</div>
+            <div class="exec-pill">Celery</div>
+            <div class="exec-pill">Synapse Z</div>
+            <div class="exec-pill">Fluxus</div>
+        </div>
+    </section>
+
+    <section id="help">
+        <h2 style="text-align: center; margin-bottom: 50px;">Help & Tutorial</h2>
+        <div class="help-container">
+            <img src="https://i.imgur.com/your-roblox-pc-image.png" class="help-img" alt="Tutorial Image">
+            <div>
+                <h3>Common Issues</h3>
+                <div class="issue-card">
+                    <h4>Script not executing</h4>
+                    <p>There may have been an interference attaching to Roblox. Restarting Zenith or your executor would resume everything.</p>
+                </div>
+                <div class="issue-card">
+                    <h4>Missing Dependencies</h4>
+                    <p>Download Microsoft Visual C++ Redistributable and .NET Runtime 8.0.0 to fix opening issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="get">ZENITH EXPLOITS © 2026 | CREEDSS TO ZXN</footer>
+
+</body>
+</html>
